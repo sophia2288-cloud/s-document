@@ -19,6 +19,7 @@ export const useLogin = () => {
 
     const mutation = useMutation({
         mutationFn: login,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         onSuccess: (data: any) => {
 
             if (data?.success) {

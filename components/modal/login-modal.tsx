@@ -79,6 +79,7 @@ export const LoginModal = () => {
 
         startTransition(() => {
             login(values)
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
                 .then((data: any) => {
                     if (data?.error) {
                         setError(data.error);
